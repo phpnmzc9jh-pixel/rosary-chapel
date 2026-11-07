@@ -19,9 +19,11 @@
   h1 { font-size: 44px; line-height: 1.1; margin: 22px 0 8px; font-weight: 600; }
   .tagline { color: var(--gold); font-size: 21px; margin: 0 0 6px; font-style: italic; }
   .lede { color: var(--muted); max-width: 560px; margin: 14px auto 0; }
-  .stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 30px 0 8px; }
+  .stores { display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 30px 0 8px; }
   .store { display: inline-flex; flex-direction: column; align-items: center; min-width: 190px; padding: 10px 22px;
            border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--text); text-decoration: none; }
+  .badge { display: inline-flex; align-items: center; }
+  .badge img { height: 58px; width: auto; display: block; }
   .store small { color: var(--muted); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
   .store b { font-size: 18px; font-weight: 600; }
   .price { text-align: center; color: var(--muted); font-size: 15px; margin: 0; }
@@ -48,8 +50,8 @@
     <p class="tagline">Pray the Rosary together</p>
     <p class="lede">Pray the Holy Rosary the way it is prayed in a parish: a leader begins each prayer and the congregation answers together, in natural, human-sounding voices.</p>
     <div class="stores sans">
-      <!-- Replace these with the real store links once the app is live. -->
-      <span class="store"><small>Coming soon to the</small><b>App Store</b></span>
+      <a class="badge" href="https://apps.apple.com/gb/app/rosary-chapel-pray-together/id6823103043"><img src="app-store-badge.svg" alt="Download on the App Store"></a>
+      <!-- Replace with the Google Play badge and link once the Android app is live. -->
       <span class="store"><small>Coming soon to</small><b>Google Play</b></span>
     </div>
     <p class="price sans">One-off purchase · £2.99 · No ads, no subscriptions</p>
